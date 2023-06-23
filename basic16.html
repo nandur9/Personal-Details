@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+   .container {
+        max-width: 450px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color:rgb(180, 231, 13);
+        border: 1
+   }
+        body {
+           color: rgb(14, 14, 17);
+        }
+
+         h1 {
+         color: rgb(204, 18, 18);
+           }
+           body {
+           color: rgb(14, 14, 17);
+        }
+
+         h2 {
+         color: rgb(204, 18, 18);
+           }
+           h3 {
+         color: rgb(204, 18, 18);
+           }
+           input[type="submit"] {
+  background-color: #dfbc0a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input[type="submit"]:hover {
+  background-color: #c1a722;
+}
+
+
+    </style>
+    <title>Personal Details</title>
+    
+    <link rel="stylesheet" href="style.css">
+  <body>
+    <div class="container">
+      <h1>Personal Details</h1>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail id:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-buttons">
+              <input type="radio" id="male" name="gender" value="male" required>
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" required>
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact#:</label>
+            <input type="tel" id="contact" name="contact" required>
+          </div>
+          <div class="form-group">
+            <h2>Educational Qualification</h2>
+            <label for="Degree">Degree:</label>
+            <select id="Degree" name="Degree" required>
+              <option value="">---select Group---</option>
+               <label for="Engineering">Engineering:</label>
+             <select id="Engineering" name="Engineering" required>
+                <div class="form-group">
+                    <label for="hobbies">Hobbies:</label>
+                    <div class="checkboxes">
+                      <input type="checkbox" id="chess" name="hobbies[]" value="chess">
+                      <label for="chess">Playing chess</label>
+                      <input type="checkbox" id="reading" name="hobbies[]" value="reading">
+                      <label for="reading">Reading Books</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h3>Address</h3>
+                    <textarea id="Address" name="Address" rows="4" cols="40"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="resume">Attach Resume:</label>
+                    <input type="file" id="resume" name="resume">
+                  
+                  <div class="form-group">
+                    
+                    <input type="Submit" value=Submit>
+            
+                  </div>
+                </form>
+              </div>
+              
+            
+            </select>
+          </div>
+    </head>
+   </html>
